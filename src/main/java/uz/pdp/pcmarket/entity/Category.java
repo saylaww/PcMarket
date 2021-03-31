@@ -22,6 +22,7 @@ public class Category {
     private String description;
 
     @OneToMany
+    @JoinColumn(name = "parent_id")
     private List<Category> parent;
 
     @OneToOne

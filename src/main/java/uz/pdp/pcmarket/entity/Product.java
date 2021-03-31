@@ -27,6 +27,7 @@ public class Product {
     private Integer price;
 
     @OneToMany
+    @JoinColumn(name = "photo_id")
     private List<Attachment> photo;
 
 }
