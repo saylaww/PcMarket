@@ -21,9 +21,8 @@ public class Category {
 
     private String description;
 
-    @OneToMany
-    @JoinColumn(name = "parent_id")
-    private List<Category> parent;
+    @OneToOne
+    private Category parent;
 
     @OneToOne
     private Attachment photo;
